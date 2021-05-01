@@ -66,7 +66,7 @@ main{
   line-height: 1.6rem;
   color: #757575;
 }
-.main-currency-table{
+.main-currency-table, .main-comision-table{
   width: 70%;
   min-width: 250px;
   max-width: 500px;
@@ -76,23 +76,32 @@ main{
 }
 .main-currency-table .currency-table-title{
   margin-bottom: 15px;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: bold;
   line-height: 2.3rem;
+  opacity: 0.5;
   color: var(--bitcoin-orange);
 }
-.main-currency-table .currency-table-container{
+.main-comision-table .comision-table-title{
+  margin-bottom: 15px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 2.3rem;
+  opacity: 0.5;
+  color: var(--secondary-blue);
+}
+.main-currency-table .currency-table-container, .main-comision-table .comision-table-container{
   width: 90%;
   min-width: 230px;
   max-width: 300px;
   height: 250px;
   margin: 0 auto;
 }
-.currency-table-container table{
+.currency-table-container table, .comision-table-container table{
   width: 100%;
   height: 100%;
 }
-.currency-table-container td{
+.currency-table-container td, .comision-table-container td{
   width: 50%;
   font-size: 1.6rem;
   font-weight: 500;
@@ -100,25 +109,25 @@ main{
   color: var(--gray);
   background-color: white;
 }
-.currency-table-container .table__top-left{
+.currency-table-container .table__top-left, .comision-table-container .table__top-left{
   border-radius: 15px 0 0 0;
 }
-.currency-table-container .table__top-rigth{
+.currency-table-container .table__top-rigth, .comision-table-container .table__top-rigth{
   border-radius: 0 15px 0 0;
 }
-.currency-table-container .table__bottom-rigth{
+.currency-table-container .table__bottom-rigth, .comision-table-container .table__bottom-rigth{
   border-radius: 0 0 15px  0;
 }
-.currency-table-container .table__bottom-left{
+.currency-table-container .table__bottom-left, .comision-table-container .table__bottom-left{
   border-radius: 0 0 0 15px;
 }
-.currency-table-container .table__rigth{
+.currency-table-container .table__rigth, .comision-table-container .table__rigth{
   font-size: 1.4rem;
   font-weight: normal;
   line-height: 1.7rem;
   color: #757575;
 }
-.currency-table-container .svg-trending-down{
+.currency-table-container .svg-trending-down, .comision-table-container .svg-trending-down{
   display: inline-block;
   width: 15px;
   height: 15px;
@@ -128,7 +137,7 @@ main{
   background-position: center;
   background-repeat: no-repeat;
 }
-.currency-table-container .svg-trending-up{
+.currency-table-container .svg-trending-up, .comision-table-container .svg-trending-up{
   display: inline-block;
   width: 15px;
   height: 15px;
@@ -137,4 +146,79 @@ main{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+.currency-table-date{
+  width: 190px;
+  height: 30px;
+  margin: 0 auto;
+  margin-top: 15px;
+  padding: 8px;
+  background-color: var(--soft-orange);
+  border-radius: 8px;
+}
+.comision-table-date{
+  width: 190px;
+  height: 30px;
+  margin: 0 auto;
+  margin-top: 15px;
+  padding: 8px;
+  background-color: var(--soft-blue);
+  border-radius: 8px;
+}
+.currency-table-date p, .comision-table-date p{
+  font-size: 1.2rem;
+  height: 1.5rem;
+  color: var(--warm-black);
+}
+.main-table-container ul, li {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: var(--off-white);
+    list-style: none inside;
+}
+.main-tables-slider {
+    position:relative;
+}
+.main-tables-slider li {
+    position: absolute;
+    opacity: 0;
+    transition: opacity .5s;
+}
+.main-tables-slider li:first-child {
+    opacity: 1;
+}
+.main-tables-slider li:target {
+    opacity: 1;
+}
+.main-tables-menu {
+  display: flex;
+  justify-content: space-between;
+  position:relative;
+  width: 100%;
+  height: 20px;
+  margin-bottom: 10px;
+}
+.main-tables-container nav{
+  display: inline-block;
+  width: 100%;
+  max-width: 320px;
+}
+.main-tables-container nav .main-tables-menu li a{
+  text-decoration: none;
+}
+#menu-titulo-comisiones{
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 2.3rem;
+  color: var(--secondary-blue);
+}
+#menu-titulo-monedas{
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 2.3rem;
+  color: var(--bitcoin-orange);
+
 }
