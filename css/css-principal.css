@@ -167,6 +167,7 @@ main{
 }
 .currency-table-date p, .comision-table-date p{
   font-size: 1.2rem;
+  font-weight: 300;
   height: 1.5rem;
   color: var(--warm-black);
 }
