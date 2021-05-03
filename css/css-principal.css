@@ -66,6 +66,14 @@ main{
   line-height: 1.6rem;
   color: #757575;
 }
+.main-tables-container{
+  height: 370px;
+  text-align: center;
+}
+.main-tables-container{
+  height: 390px;
+  width: 100%;
+}
 .main-currency-table, .main-comision-table{
   width: 70%;
   min-width: 250px;
@@ -221,5 +229,12 @@ main{
   font-weight: bold;
   line-height: 2.3rem;
   color: var(--bitcoin-orange);
+}
+.main-product-detail{
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  padding: 20px 10px;
 
 }
