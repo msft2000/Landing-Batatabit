@@ -531,4 +531,5 @@ footer .left ul li a{
 }
 footer .right img {
     width: 55%;
+    max-width: 150px;
 }
