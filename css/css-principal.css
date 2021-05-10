@@ -530,5 +530,6 @@ footer .left ul li a{
   color: white;
 }
 footer .right img {
-    width: 55%;
+    width: 35%;
+    max-width: 190px;
 }
