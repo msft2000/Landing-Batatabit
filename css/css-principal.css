@@ -288,14 +288,26 @@ header img{
   font-size: 1.8rem;
   font-weight: bold;
   line-height: 2.3rem;
-  color: var(--secondary-blue);
+  color: #1A9AF780;
 }
 #menu-titulo-monedas{
   margin-bottom: 15px;
   font-size: 1.8rem;
   font-weight: bold;
   line-height: 2.3rem;
-  color: var(--bitcoin-orange);
+  color: #F7931A80;
+}
+#menu-titulo-comisiones:hover{
+  color: #1A9AF7;
+}
+#menu-titulo-monedas:hover{
+  color: #F7931A;
+}
+#menu-titulo-comisiones:active{
+  color: #1A9AF7;
+}
+#menu-titulo-monedas:active{
+  color: #F7931A;
 }
 .main-product-detail{
   position: relative;
@@ -386,7 +398,7 @@ header img{
   width: 100%;
   min-width: 320px;
   height: 90vh;
-  background-image: url("../assets/imgs/bitcoinbaby2.jpeg");
+  background-image: url("../assets/imgs/bitcoinbaby.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -505,6 +517,7 @@ header img{
 }
 footer{
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   height: 150px;
   background-color: var(--bitcoin-orange);
@@ -515,6 +528,14 @@ footer section{
   align-items: center;
   width: 50%;
 }
+footer .left{
+  width: 50%;
+  min-width: 50%;
+}
+footer .right{
+  width: 50%;
+  min-width: 50%;
+}
 footer .left ul{
   font-size: 1.4rem;
   font-weight: 500;
@@ -523,13 +544,32 @@ footer .left ul{
 }
 footer .left ul li{
   margin: 10px 0;
-  background-color: var(--orange-bitcoin);
+  background-color: var(--bitcoin-orange);
 }
 footer .left ul li a{
   text-decoration: none;
   color: white;
 }
 footer .right img {
-    width: 35%;
+
+    width: 30%;
+    margin-top: 20px;
     max-width: 190px;
+}
+footer .footer-creditos{
+  min-height: 50px;
+  width: 100%;
+  min-width: 100%;
+  text-align: center;
+  background-color: var(--bitcoin-orange);
+}
+footer .footer-creditos p{
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  color: white;
+}
+footer .footer-creditos a{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }

@@ -4,6 +4,10 @@
   width: 930px;
   margin: 0 auto;
 }
+.bitcoin-img-container{
+  background-image: url("../assets/imgs/bitcoinbaby2.jpeg");
+}
 .plans-container-slider{
+  overflow-x: hidden;
   justify-content: center;
 }
